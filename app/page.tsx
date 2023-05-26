@@ -12,7 +12,7 @@ export default function Home() {
         The smart todo list for the entire family
       </h2>
       <Image
-        src="https://storage.googleapis.com/d42ba1b4ddfb8a90580a58367da83a83/honeydew_splash.webp"
+        src="https://storage.googleapis.com/public-images-5e6e98b5d6a9b294e961ed8e7b2836de/honeydew_splash.webp"
         alt="splash-image"
         className="-z-10 brightness-50 object-cover"
         aria-hidden

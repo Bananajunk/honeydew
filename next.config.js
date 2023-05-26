@@ -6,7 +6,7 @@ const nextConfig = {
         protocol: "https",
         hostname: "storage.googleapis.com",
         port: "",
-        pathname: "/d42ba1b4ddfb8a90580a58367da83a83/*",
+        pathname: "/public-images-5e6e98b5d6a9b294e961ed8e7b2836de/*",
       },
     ],
   },
