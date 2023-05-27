@@ -1,3 +1,4 @@
+import authOptions from "@/lib/authOptions";
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
 
@@ -6,7 +7,7 @@ interface Props {
 }
 
 const BoardLayout = async ({ children }: Props) => {
-  const session = await getServerSession();
+  const session = await getServerSession(authOptions);
 
   if (!session) {
     redirect("/");
