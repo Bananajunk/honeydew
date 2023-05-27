@@ -11,7 +11,12 @@ const SignIn = () => {
     console.log(session);
     return (
       <>
-        <button onClick={() => signOut()}>Sign Out</button>
+        <button
+          onClick={() => signOut()}
+          className="bg-secondary/20 rounded-md px-4 py-1 text-base shadow-sm"
+        >
+          Sign Out
+        </button>
         <Link href="/board" aria-label="View Board">
           <Avatar
             name={session.user?.name || ""}
@@ -27,7 +32,14 @@ const SignIn = () => {
     );
   }
 
-  return <Link href="/api/auth/signin">Sign In</Link>;
+  return (
+    <Link
+      href="/api/auth/signin"
+      className="bg-secondary/20 rounded-md px-4 py-1 text-base shadow-sm"
+    >
+      Sign In
+    </Link>
+  );
 };
 
 export default SignIn;
