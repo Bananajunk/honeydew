@@ -8,6 +8,11 @@ const authOptions: NextAuthOptions = {
       clientSecret: process.env.GOOGLE_SECRET ?? "",
     }),
   ],
+  theme: {
+    colorScheme: "light",
+    brandColor: "#61864b",
+    buttonText: "#060704",
+  },
 };
 
 const handler = NextAuth(authOptions);

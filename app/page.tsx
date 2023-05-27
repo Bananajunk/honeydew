@@ -1,8 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import { PhotoIcon } from "@heroicons/react/20/solid";
+import SignIn from "@/components/SignIn";
+import { getProviders } from "next-auth/react";
 
-export default function Home() {
+const Home = async () => {
   return (
     <main className="h-screen w-full relative flex justify-center flex-col items-center text-center">
       <h1 className="p-4 text-white text-8xl font-bold uppercase font-heading">
@@ -28,4 +30,6 @@ export default function Home() {
       </Link>
     </main>
   );
-}
+};
+
+export default Home;
