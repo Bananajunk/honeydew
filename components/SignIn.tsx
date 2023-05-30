@@ -8,7 +8,7 @@ const SignIn = () => {
   const { data: session, status } = useSession();
   if (status === "loading")
     return (
-      <span className="animate-pulse rounded w-24 h-9 text-base shadow-sm bg-secondary/20" />
+      <span className="animate-pulse rounded-md w-24 h-9 text-base shadow-sm bg-secondary/20" />
     );
   if (!!session) {
     console.log(session);

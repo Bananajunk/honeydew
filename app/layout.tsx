@@ -23,7 +23,7 @@ export default async function RootLayout({
   return (
     <AuthProvider>
       <html lang="en" className={`${oswald.variable} font-oswald text-base`}>
-        <body className="relative">
+        <body className="relative bg-background">
           <nav className={`absolute top-0 w-screen p-5 z-10 shadow-lg`}>
             <section className="flex justify-end gap-4">
               <SignIn />
